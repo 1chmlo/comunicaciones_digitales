@@ -64,7 +64,7 @@ m_t_nat = PAM_natural;
 m_t_inst = PAM_instantaneo;
 
 % Parámetros PCM
-N = 2; % Número de bits para PCM
+N = 3; % Número de bits para PCM
 pcm_levels = 2^N; % Total de niveles PCM
 % Cuantizar la señal instantánea usando PCM
 pcm_signal_inst = round((m_t_inst + 1) * (pcm_levels - 1) / 2); % Cuantización
